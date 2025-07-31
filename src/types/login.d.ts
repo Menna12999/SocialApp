@@ -1,0 +1,1 @@
+declare type LoginResponseType ={message:string ; token:string};
