@@ -11,7 +11,7 @@ export default async function Home() {
 
   const myCookies = await cookies();
   async function getAllPosts(){
-  const res = await  fetch(`https://linked-posts.routemisr.com/posts?limit=50`,{
+  const res = await  fetch(`https://linked-posts.routemisr.com/posts`,{
       headers:{
         token:myCookies.get('userToken')?.value||'',
       }
